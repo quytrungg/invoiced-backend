@@ -12,7 +12,7 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-# gem "jbuilder"
+gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
@@ -29,6 +29,18 @@ gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Rack::Cors provides support for Cross-Origin Resource Sharing (CORS) for Rack compatible web applications.
+# https://github.com/cyu/rack-cors
+gem 'rack-cors'
+
+# Flexible authentication solution for Rails with Warden
+# https://rubygems.org/gems/devise
+gem 'devise', '~> 4.9', '>= 4.9.4'
+
+# Simple (but safe) token authentication for Rails apps or API with Devise.
+# https://rubygems.org/gems/simple_token_authentication/versions/1.15.1
+gem 'simple_token_authentication', '~> 1.15', '>= 1.15.1'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -44,4 +56,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
